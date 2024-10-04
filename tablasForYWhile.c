@@ -49,19 +49,19 @@ int main()
 {
     int n;
   
-    printf("Dame el numero de la tabla a multiplicar: ");
+    printf("Dame el número de la tabla a multiplicar: ");
     scanf("%d", &n);
 
     printf("\n\n\n");
-    printf("Utilizacion del for\n");
+    printf("Utilización del for\n");
     mult_for(n);
 
     printf("\n\n\n");
-    printf("Utilizacion del while\n");
+    printf("Utilización del while\n");
     mult_while(n);
     
     printf("\n\n\n");
-    printf("Utilizacion del do-while\n");
+    printf("Utilización del do-while\n");
     mult_dowhile(n);
 
     return 0;
