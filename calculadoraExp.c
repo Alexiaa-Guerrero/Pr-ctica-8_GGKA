@@ -33,6 +33,21 @@ int exp_while(int a, int b)
     return(res);
 }
 
+int exp_doWhile(int a, int b)
+{
+    int res = 1;
+    int i = 0;
+
+    do
+    {
+        res = res * a;
+        i = i + 1;
+    }
+    while(i < b);
+
+    return(res);
+}
+
 int main()
 {
     int a, b, res;
@@ -46,8 +61,12 @@ int main()
     res = exp_for(a, b);
     printf("El resultado es: %d\n", res);
 
-    printf("\n Exponenciación con for");
+    printf("\n Exponenciación con while");
     res = exp_while(a, b);
+    printf("El resultado es: %d\n", res);
+
+    printf("\n Exponenciación con  do while");
+    res = exp_doWhile(a, b);
     printf("El resultado es: %d\n", res);
 
     return 0;
